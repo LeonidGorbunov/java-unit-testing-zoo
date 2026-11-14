@@ -22,7 +22,7 @@ jobs:
           cache: 'maven'
 
       - name: Run Unit tests & generate JaCoCo report
-        run: mvn clean test jacoco:report
+        run: mvn clean test
 
       - name: Deploy JaCoCo report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

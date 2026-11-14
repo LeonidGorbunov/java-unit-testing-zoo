@@ -70,10 +70,18 @@
                     </execution>
                     <execution>
                         <id>report</id>
-                        <phase>verify</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <includes>
+                                <include>com/zoo/Feline.class</include>
+                                <include>com/zoo/Cat.class</include>
+                                <include>com/zoo/Lion.class</include>
+                                <include>com/zoo/LionAlex.class</include>
+                            </includes>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
